@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(bx71_gesture_photo LANGUAGES CXX)
+find_package(OpenCV REQUIRED COMPONENTS core imgproc imgcodecs dnn)
+add_executable(bx71_gesture_photo main.cpp)
+target_include_directories(bx71_gesture_photo PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(bx71_gesture_photo PRIVATE ${OpenCV_LIBS})
+set_property(TARGET bx71_gesture_photo PROPERTY CXX_STANDARD 11)

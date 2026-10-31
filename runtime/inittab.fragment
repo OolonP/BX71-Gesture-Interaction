@@ -1,0 +1,1 @@
+bg:2345:once:/bin/sh -c "exec /bin/sh /etc/bx71_gesture_start.sh >> /tmp/bx71_autostart.log 2>&1"
